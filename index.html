@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Decoficador de Texto - ONE: Oracle Next Education"
+    />
+
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="loader.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="tablet.css"
+      media="screen and (min-width: 760px)"
+    />
+    <link
+      rel="stylesheet"
+      href="./stylesheet/desktop.css"
+      media="screen and (min-width: 1024px)"
+    />
+
+    <link rel="icon" type="image/x-icon" href="./image/favicon-32x32.png" />
+
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Librería de alertar -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <title>Decoficador de Texto</title>
+  </head>
+
+  <body>
+    <div class="container--loader">
+      <div class="loader"></div>
+    </div>
+
+    <main>
+      <div class="contenedor-esq">
+        <textarea
+          name=""
+          id="input-texto"
+          class="input-texto"
+          cols="30"
+          rows="13"
+          placeholder="Digite o texto aqui"
+        ></textarea>
+        <p>🛈 Somente letras minúsculas e sem acento</p>
+      </div>
+
+      <div class="container-btns">
+        <button class="b-encriptar" id="b-encriptar" onclick="encriptar()">
+          Criptografar
+        </button>
+        <button class="b-desencriptar" onclick="desencriptar()">
+          Descriptografar
+        </button>
+        <button class="b-copiar" onclick="copiar()">Copiar</button>
+      </div>
+
+      <div class="contenedor-der">
+        <div class="opacidad-imagen"></div>
+
+        <div class="contenedor-texto">
+          <textarea
+            name=""
+            id="output-texto"
+            class="output-texto"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <p id="texto1-contder" class="texto1-contder">
+            Nenhuma mensagem foi encontrada
+          </p>
+          <p id="texto2-contder" class="texto2-contder">
+            Insira o texto que deseja criptografar ou descriptografar.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <span>Feito por</span>
+      <span>| Valter Ruiz |</span>
+
+      <a href="" target="_blank"
+        ><img class="icon_linkedin" src="icon-linkedin.png" alt="linkedIn"
+      /></a>
+      <a href="https://github.com/vaalter" target="_blank"
+        ><img class="icon_github" src="logo git.png" alt="GitHub"
+      /></a>
+    </footer>
+
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
